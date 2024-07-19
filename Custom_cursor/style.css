@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: none;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 6rem;
+    color: rgb(245, 245, 245);
+}
+
+h1::selection{
+    background-color: wheat;
+    color: black;
+}
+
+#cursor{
+    width: 20px;
+    height: 20px;
+    background-color: wheat;
+    border-radius: 50px;
+    position: absolute;
+    transition: all linear 0.3s;
+    mix-blend-mode: difference;
+}
+
